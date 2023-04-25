@@ -1,0 +1,21 @@
+importFrom("grDevices", colorRampPalette, dev.new, dev.off, png, rainbow, xy.coords, rgb)
+importFrom("graphics", Axis, abline, axis, boxplot, grid, hist, legend, lines, mtext, par, plot, pairs, polygon, box, text, title, points)
+importFrom("stats", quantile, runif, time)
+importFrom("zoo", is.zoo, zoo, coredata, read.zoo, write.zoo)
+importFrom("hydroTSM", drawTimeAxis, dip, mip, yip, vector2zoo)
+importFrom("utils", ls.str, modifyList, read.table, sessionInfo, write.table)
+importFrom("lhs", randomLHS)
+importFrom("methods", is)
+importFrom("randtoolbox", sobol)
+importFrom("parallel", detectCores, makeForkCluster, makeCluster, clusterCall, clusterExport, mclapply, parRapply, clusterApply, stopCluster)
+#exportPattern("^[^\\.]")
+export(GR4JExampleCal,
+       GR4JExampleVer,
+       hydromod,
+       hydroMOPSO,
+       hydroVerification,
+       PlotResults,
+       ReadResults,
+       SimVsObs
+      )
+
